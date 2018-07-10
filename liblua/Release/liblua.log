@@ -1,0 +1,85 @@
+﻿Build started 08.10.2017 0:13:58.
+     1>Project "D:\lua534\lua534\liblua\liblua.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\lua534\lua534\Release\".
+       InitializeBuildStatus:
+         Creating "Release\liblua.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\lua534\src\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\lapi.cpp ..\..\src\lauxlib.cpp ..\..\src\lbaselib.cpp ..\..\src\lbitlib.cpp ..\..\src\lcode.cpp ..\..\src\lcorolib.cpp ..\..\src\lctype.cpp ..\..\src\ldblib.cpp ..\..\src\ldebug.cpp ..\..\src\ldo.cpp ..\..\src\ldump.cpp ..\..\src\lfunc.cpp ..\..\src\lgc.cpp ..\..\src\linit.cpp ..\..\src\liolib.cpp ..\..\src\llex.cpp ..\..\src\lmathlib.cpp ..\..\src\lmem.cpp ..\..\src\loadlib.cpp ..\..\src\lobject.cpp ..\..\src\lopcodes.cpp ..\..\src\loslib.cpp ..\..\src\lparser.cpp ..\..\src\lstate.cpp ..\..\src\lstring.cpp ..\..\src\lstrlib.cpp ..\..\src\ltable.cpp ..\..\src\ltablib.cpp ..\..\src\ltm.cpp ..\..\src\lundump.cpp ..\..\src\lutf8lib.cpp ..\..\src\lvm.cpp ..\..\src\lzio.cpp
+         lapi.cpp
+         lauxlib.cpp
+         lbaselib.cpp
+         lbitlib.cpp
+         lcode.cpp
+         lcorolib.cpp
+         lctype.cpp
+         ldblib.cpp
+         ldebug.cpp
+         ldo.cpp
+         ldump.cpp
+         lfunc.cpp
+         lgc.cpp
+         linit.cpp
+         liolib.cpp
+         llex.cpp
+         lmathlib.cpp
+         lmem.cpp
+         loadlib.cpp
+         lobject.cpp
+         Компиляция...
+         lopcodes.cpp
+         loslib.cpp
+         lparser.cpp
+         lstate.cpp
+         lstring.cpp
+         lstrlib.cpp
+         ltable.cpp
+         ltablib.cpp
+         ltm.cpp
+         lundump.cpp
+         lutf8lib.cpp
+         lvm.cpp
+         lzio.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"D:\lua534\lua534\Release\liblua.lib" /NOLOGO /LTCG Release\lapi.obj
+         Release\lauxlib.obj
+         Release\lbaselib.obj
+         Release\lbitlib.obj
+         Release\lcode.obj
+         Release\lcorolib.obj
+         Release\lctype.obj
+         Release\ldblib.obj
+         Release\ldebug.obj
+         Release\ldo.obj
+         Release\ldump.obj
+         Release\lfunc.obj
+         Release\lgc.obj
+         Release\linit.obj
+         Release\liolib.obj
+         Release\llex.obj
+         Release\lmathlib.obj
+         Release\lmem.obj
+         Release\loadlib.obj
+         Release\lobject.obj
+         Release\lopcodes.obj
+         Release\loslib.obj
+         Release\lparser.obj
+         Release\lstate.obj
+         Release\lstring.obj
+         Release\lstrlib.obj
+         Release\ltable.obj
+         Release\ltablib.obj
+         Release\ltm.obj
+         Release\lundump.obj
+         Release\lutf8lib.obj
+         Release\lvm.obj
+         Release\lzio.obj
+         liblua.vcxproj -> D:\lua534\lua534\Release\liblua.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\liblua.unsuccessfulbuild".
+         Touching "Release\liblua.lastbuildstate".
+     1>Done Building Project "D:\lua534\lua534\liblua\liblua.vcxproj" (build target(s)).
+
+Построение успешно завершено.
+
+Time Elapsed 00:00:08.83

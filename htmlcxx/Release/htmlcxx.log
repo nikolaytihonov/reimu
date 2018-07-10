@@ -1,0 +1,23 @@
+﻿Build started 08.10.2017 2:27:54.
+     1>Project "D:\lua534\lua534\htmlcxx\htmlcxx.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\htmlcxx.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"D:\lua534\lua534\Release\htmlcxx.lib" /NOLOGO Release\Extensions.obj
+         Release\Node.obj
+         Release\ParserDom.obj
+         Release\ParserSax.obj
+         Release\Uri.obj
+         Release\utils.obj
+         htmlcxx.vcxproj -> D:\lua534\lua534\Release\htmlcxx.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\htmlcxx.unsuccessfulbuild".
+         Touching "Release\htmlcxx.lastbuildstate".
+     1>Done Building Project "D:\lua534\lua534\htmlcxx\htmlcxx.vcxproj" (build target(s)).
+
+Построение успешно завершено.
+
+Time Elapsed 00:00:01.16

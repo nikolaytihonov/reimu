@@ -1,0 +1,188 @@
+1: mp3.lua:3: attempt to index a nil value (global 'args') (string)
+[20/10/2017 00:06:16] 1: mp3.lua:3: attempt to index a nil value (global 'args') (string)
+FATAL ERROR: mp3.lua:3: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:3: in main chunk
+[20/10/2017 00:06:16] FATAL ERROR: mp3.lua:3: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:3: in main chunk
+1: mp3.lua:44: attempt to index a nil value (global 'args') (string)
+[20/10/2017 00:07:08] 1: mp3.lua:44: attempt to index a nil value (global 'args') (string)
+FATAL ERROR: mp3.lua:44: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:44: in main chunk
+[20/10/2017 00:07:08] FATAL ERROR: mp3.lua:44: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:44: in main chunk
+1: mp3.lua:4: attempt to index a nil value (global 'args') (string)
+[20/10/2017 00:07:20] 1: mp3.lua:4: attempt to index a nil value (global 'args') (string)
+FATAL ERROR: mp3.lua:4: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:4: in main chunk
+[20/10/2017 00:07:20] FATAL ERROR: mp3.lua:4: attempt to index a nil value (global 'args')
+stack traceback:
+	mp3.lua:4: in main chunk
+1: mp3.lua:47: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+[20/10/2017 00:09:09] 1: mp3.lua:47: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+FATAL ERROR: mp3.lua:47: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	mp3.lua:47: in main chunk
+[20/10/2017 00:09:09] FATAL ERROR: mp3.lua:47: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	mp3.lua:47: in main chunk
+1: mp3.lua:49: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+[20/10/2017 00:09:52] 1: mp3.lua:49: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+FATAL ERROR: mp3.lua:49: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	mp3.lua:49: in main chunk
+[20/10/2017 00:09:52] FATAL ERROR: mp3.lua:49: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	mp3.lua:49: in main chunk
+luaL_loadfile: mp3.lua:114: 'end' expected (to close 'function' at line 53) near <eof>
+[20/10/2017 00:22:26] luaL_loadfile: mp3.lua:114: 'end' expected (to close 'function' at line 53) near <eof>
+luaL_loadfile: mp3.lua:141: syntax error near '=='
+[20/10/2017 00:31:23] luaL_loadfile: mp3.lua:141: syntax error near '=='
+1: es.lua:39: bad argument #1 to 'format' (number expected, got string) (string)
+[25/10/2017 21:33:31] 1: es.lua:39: bad argument #1 to 'format' (number expected, got string) (string)
+FATAL ERROR: es.lua:39: bad argument #1 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	es.lua:39: in function 'dumpMain'
+	es.lua:60: in main chunk
+[25/10/2017 21:33:31] FATAL ERROR: es.lua:39: bad argument #1 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	es.lua:39: in function 'dumpMain'
+	es.lua:60: in main chunk
+1: es.lua:54: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+[25/10/2017 21:34:12] 1: es.lua:54: bad argument #1 to 'for iterator' (table expected, got nil) (string)
+FATAL ERROR: es.lua:54: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	es.lua:54: in function 'dumpMain'
+	es.lua:60: in main chunk
+[25/10/2017 21:34:12] FATAL ERROR: es.lua:54: bad argument #1 to 'for iterator' (table expected, got nil)
+stack traceback:
+	[C]: in function 'next'
+	es.lua:54: in function 'dumpMain'
+	es.lua:60: in main chunk
+1: download.lua:9: bad argument #2 to 'format' (number expected, got string) (string)
+[27/10/2017 10:13:41] 1: download.lua:9: bad argument #2 to 'format' (number expected, got string) (string)
+FATAL ERROR: download.lua:9: bad argument #2 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	download.lua:9: in function 'addCookie'
+	download.lua:19: in main chunk
+[27/10/2017 10:13:41] FATAL ERROR: download.lua:9: bad argument #2 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	download.lua:9: in function 'addCookie'
+	download.lua:19: in main chunk
+1: download.lua:9: bad argument #2 to 'format' (number expected, got string) (string)
+[27/10/2017 10:15:45] 1: download.lua:9: bad argument #2 to 'format' (number expected, got string) (string)
+FATAL ERROR: download.lua:9: bad argument #2 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	download.lua:9: in function 'addCookie'
+	download.lua:19: in main chunk
+[27/10/2017 10:15:45] FATAL ERROR: download.lua:9: bad argument #2 to 'format' (number expected, got string)
+stack traceback:
+	[C]: in function 'string.format'
+	download.lua:9: in function 'addCookie'
+	download.lua:19: in main chunk
+1: test3.lua:6: attempt to call a nil value (global '_curlPerformFile') (string)
+[01/01/2018 14:20:15] 1: test3.lua:6: attempt to call a nil value (global '_curlPerformFile') (string)
+FATAL ERROR: test3.lua:6: attempt to call a nil value (global '_curlPerformFile')
+stack traceback:
+	test3.lua:6: in main chunk
+[01/01/2018 14:20:15] FATAL ERROR: test3.lua:6: attempt to call a nil value (global '_curlPerformFile')
+stack traceback:
+	test3.lua:6: in main chunk
+1: base.lua:40: attempt to perform arithmetic on a nil value (local 'errs') (string)
+[01/01/2018 14:20:46] 1: base.lua:40: attempt to perform arithmetic on a nil value (local 'errs') (string)
+FATAL ERROR: base.lua:40: attempt to perform arithmetic on a nil value (local 'errs')
+stack traceback:
+	base.lua:40: in function '_performCurl'
+	test3.lua:6: in main chunk
+[01/01/2018 14:20:46] FATAL ERROR: base.lua:40: attempt to perform arithmetic on a nil value (local 'errs')
+stack traceback:
+	base.lua:40: in function '_performCurl'
+	test3.lua:6: in main chunk
+1: test.lua:3: attempt to call a nil value (method 'SetOpt') (string)
+[01/01/2018 14:43:47] 1: test.lua:3: attempt to call a nil value (method 'SetOpt') (string)
+FATAL ERROR: test.lua:3: attempt to call a nil value (method 'SetOpt')
+stack traceback:
+	test.lua:3: in main chunk
+[01/01/2018 14:43:47] FATAL ERROR: test.lua:3: attempt to call a nil value (method 'SetOpt')
+stack traceback:
+	test.lua:3: in main chunk
+1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+[01/01/2018 14:50:07] 1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+[01/01/2018 14:50:07] FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+[01/01/2018 14:50:15] 1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+[01/01/2018 14:50:15] FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+[01/01/2018 14:50:18] 1: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil) (string)
+FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+[01/01/2018 14:50:18] FATAL ERROR: test.lua:4: bad argument #1 to 'setOpt' (number expected, got nil)
+stack traceback:
+	[C]: in method 'setOpt'
+	test.lua:4: in main chunk
+1: base.lua:64: attempt to call a nil value (method 'perofrmFile') (string)
+[03/01/2018 22:54:49] 1: base.lua:64: attempt to call a nil value (method 'perofrmFile') (string)
+FATAL ERROR: base.lua:64: attempt to call a nil value (method 'perofrmFile')
+stack traceback:
+	base.lua:64: in function '_performFileCurl'
+	test3.lua:12: in main chunk
+[03/01/2018 22:54:49] FATAL ERROR: base.lua:64: attempt to call a nil value (method 'perofrmFile')
+stack traceback:
+	base.lua:64: in function '_performFileCurl'
+	test3.lua:12: in main chunk
+1: base.lua:64: attempt to call a nil value (method 'perofrmFile') (string)
+[03/01/2018 22:55:33] 1: base.lua:64: attempt to call a nil value (method 'perofrmFile') (string)
+FATAL ERROR: base.lua:64: attempt to call a nil value (method 'perofrmFile')
+stack traceback:
+	base.lua:64: in function '_performFileCurl'
+	test3.lua:13: in main chunk
+[03/01/2018 22:55:33] FATAL ERROR: base.lua:64: attempt to call a nil value (method 'perofrmFile')
+stack traceback:
+	base.lua:64: in function '_performFileCurl'
+	test3.lua:13: in main chunk
+1: base.lua:72: bad argument #1 to 'format' (number expected, got nil) (string)
+[03/01/2018 22:55:57] 1: base.lua:72: bad argument #1 to 'format' (number expected, got nil) (string)
+FATAL ERROR: base.lua:72: bad argument #1 to 'format' (number expected, got nil)
+stack traceback:
+	[C]: in function 'string.format'
+	base.lua:72: in function '_performFileCurl'
+	test3.lua:13: in main chunk
+[03/01/2018 22:55:57] FATAL ERROR: base.lua:72: bad argument #1 to 'format' (number expected, got nil)
+stack traceback:
+	[C]: in function 'string.format'
+	base.lua:72: in function '_performFileCurl'
+	test3.lua:13: in main chunk
+luaL_loadfile: xxx.lua:9: ')' expected (to close '(' at line 8) near 'local'
+[09/07/2018 23:31:33] luaL_loadfile: xxx.lua:9: ')' expected (to close '(' at line 8) near 'local'
+luaL_loadfile: xxx.lua:31: unexpected symbol near ')'
+[09/07/2018 23:43:50] luaL_loadfile: xxx.lua:31: unexpected symbol near ')'

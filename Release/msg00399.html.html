@@ -1,0 +1,272 @@
+<!-- MHonArc v2.6.19 -->
+<!--X-Subject: History of the Lua math library -->
+<!--X-From-R13: Rvex Znhevr &#60;qvex.ynhevrNtznvy.pbz> -->
+<!--X-Date: Tue, 08 Apr 2014 09:16:21 +0100 -->
+<!--X-Message-Id: CABcj=tndFzf2OajnGiikWMn7Etqypo9F01iw6oOPKQSZKrGXNw@mail.gmail.com -->
+<!--X-Content-Type: multipart/mixed -->
+<!--X-Head-End-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <title>History of the Lua math library</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<LINK TYPE="text/css" REL="stylesheet" HREF="/styles/main.css">
+<table cellpadding="0" cellspacing="0" border="0" width="1%" align=right>
+  <tbody>
+    <tr>
+        <td><a href="/">
+        <img src="/images/nav-logo.png" alt="lua-users home" width="177" height="40" border="0"></a></td>
+    </tr>
+    <tr>
+        <td>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tbody>
+            <tr>
+                <td><img src="/images/nav-elbow.png" alt="" width="48" height="40"></td>
+                <td nowrap="true" valign="middle" width="100%">
+                    <a href=".." class="nav">lua-l archive</a></td>
+            </tr>
+            </tbody>
+        </table>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<br clear=all>
+
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+[<a href="msg00398.html">Date Prev</a>][<a href="msg00400.html">Date Next</a>][<a href="msg00355.html">Thread Prev</a>][<a href="msg00430.html">Thread Next</a>]
+[<A HREF="index.html#00399">Date Index</A>]
+[<A HREF="threads.html#00399">Thread Index</A>]
+
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<p><ul>
+<li><b>Subject</b>: <b>History of the Lua math library</b></li>
+<li><b>From</b>: Dirk Laurie &lt;dirk.laurie@<a href="/cgi-bin/echo.cgi?gmail.com">...</a>&gt;</li>
+<li><b>Date</b>: Tue, 8 Apr 2014 10:16:07 +0200</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>Since the HISTORY file supplied with Lua distributions up to Lua 5.1.5
+does not include details about the math library, I have compiled the
+included file (in Markdown text). There are probably some errors and
+omissions.
+</pre><pre>A History of the Lua Mathematics Library
+========================================
+
+Lua 1.0
+-------
+
+The mathematical library is in the file `mathlib.c` written
+by Waldemar Celes Filho and dated 19 May 93. It contains the
+following functions:
+
+    abs acos asin atan ceil cos floor max min
+    mod pow sin sqrt tan
+
+In the case of the trigonometric functions, all angles are in 
+radians.
+
+Lua 1.1
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1993/12/17 18:41:19 celes`.
+ 
+The same functions as in Lua 1.0 are provided, but the angles
+are now in degrees.
+
+Lua 2.1
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1995/02/06 19:36:43 roberto`.
+ 
+To the functions provided in Lua 1.1 have been added:
+
+    deg exp log log10 rad
+
+`deg`, `exp` and `rad` are not listed in the manual.
+
+The `pow` function is no longer available under that name,
+but is the fallback function for the new exponentiation operator.
+
+Lua 2.2
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1995/11/10 17:54:31 roberto`.
+
+To the functions provided in Lua 2.1 have been added:
+
+    atan2
+
+`deg`, `exp` and `rad` are not listed in the manual.
+
+Lua 2.4
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1996/04/30 21:13:55 roberto`.
+
+To the functions provided in Lua 2.1 have been added:
+
+    random randomseed
+
+`deg`, `exp` and `rad` are not listed in the manual.
+
+Lua 2.5
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1996/08/01 14:55:33 roberto`.
+
+The only change is that the `mod` function accepts floats and
+calculates `fmod(x,y)` instead of `x%y`.
+
+`deg`, `exp` and `rad` are not listed in the manual.
+
+Lua 3.0
+-------
+
+The mathematical library is in the file `clients/lib/mathlib.c`
+and the RCS author tag contains `1997/06/19 18:03:04 roberto`.
+
+`deg`, `exp` and `rad` are not listed in the manual.
+
+The same functions as in Lua 2.5 are provided.
+
+Lua 3.1
+-------
+
+The mathematical library is in the file `src/lib/lmathlib.c`
+and the RCS author tag contains `1997/06/19 18:03:04 roberto`.
+
+To the functions provided in Lua 3.0 have been added:
+
+    frexp ldexp
+
+All the functions are listed in the manual.
+
+This was the release at which the defalt number format was
+changed to double.
+
+There is a hint of the coming change from radians to degrees
+in a global variable `_TRIGMODE` with initial value &quot;deg&quot;.
+However, changing this variable has no effect.
+
+Lua 3.2
+-------
+
+The mathematical library is in the file `src/lib/lmathlib.c`
+and the RCS author tag contains `1999/07/07 17:54:08 roberto`.
+
+The same functions as in Lua 3.1 are provided.
+
+`_TRIGMODE` is gone. However, a compiler variable `RADIANS`
+allows you to build a Lua in which angles are in radians.
+
+Lua 4.0
+-------
+
+The mathematical library is in the file `src/lib/lmathlib.c`
+and the RCS author tag contains `2000/10/31 13:10:24 roberto`.
+
+The same functions as in Lua 3.1 are provided.
+
+In addition, `PI` is provided as a global variable.
+
+Lua 5.0
+-------
+
+The mathematical library is in the file `src/lib/lmathlib.c`
+and the RCS author tag contains `2003/03/11 12:30:37 roberto`.
+
+At the Lua level, the functions are no longer directly in the
+global namespace but are delivered in the table `math`.
+
+To the functions provided in Lua 4.0 have been added:
+
+    pow
+
+In the case of the trigonometric functions, all angles are in 
+radians. The compiler variable `USE_DEGREES` allows you to 
+build a Lua in which angles are in degrees.
+
+The global variable `PI` has been renamed `math.pi`.
+
+Lua 5.1
+-------
+
+The mathematical library is in the file `src/lmathlib.c`
+and the RCS author tag contains `2007/12/27 13:02:25 roberto`.
+
+The function `mod` has two aliases: `fmod` and `modf`.
+
+To the functions provided in Lua 5.0 have been added:
+
+    cosh sinh tanh
+
+There is a new predefined value `math.huge`.
+
+Lua 5.2
+-------
+
+The mathematical library is in the file `src/lmathlib.c`
+and the RCS author tag contains `2013/04/12 18:48:47 roberto`.
+
+The value of PI is given in the source code to 31 decimal places.
+
+The same functions as in Lua 5.1 are provided, but `log` now
+takes an optional second argument and `log10` has been deprecated.
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Date:
+<strong><a href="msg00398.html">Re: SIGs (was: Re: passing pointers using LuaBridge)</a></strong>
+</li>
+<li>Next by Date:
+<strong><a href="msg00400.html">Re: Sharing a global table between two independent Lua interpreters</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg00355.html">Re: I have a subjestion</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg00430.html">[proposal] Using nil/NaN as table index</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="index.html#00399"><strong>Date</strong></a></li>
+<li><a href="threads.html#00399"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>

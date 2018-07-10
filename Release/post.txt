@@ -1,0 +1,116 @@
+#1
+
+GET /?do=search&subaction=search&story=Evangelion HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://hentai-chan.me/
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+
+POST /engine/ajax/search.php HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Referer: http://hentai-chan.me/
+Content-Length: 16
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+
+query=Evangelion
+
+#2
+
+POST /index.php?do=search HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://hentai-chan.me/?do=search&subaction=search&story=Evangelion
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 101
+
+do=search&subaction=search&search_start=2&full_search=0&result_from=41&result_num=40&story=Evangelion
+
+#3
+
+POST /index.php?do=search HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://hentai-chan.me/index.php?do=search
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 101
+
+do=search&subaction=search&search_start=3&full_search=0&result_from=81&result_num=40&story=Evangelion
+
+#4
+
+POST /index.php?do=search HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://hentai-chan.me/index.php?do=search
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 102
+
+do=search&subaction=search&search_start=4&full_search=0&result_from=121&result_num=40&story=Evangelion
+
+#5
+
+POST /index.php?do=search HTTP/1.1
+Host: hentai-chan.me
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://hentai-chan.me/index.php?do=search
+Cookie: PHPSESSID=c6r60dfsrrhpnosnp4t4c230q6
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 102
+
+do=search&subaction=search&search_start=5&full_search=0&result_from=161&result_num=40&story=Evangelion
+
+curl:setOpt(CURLOPT_URL,"http://hentai-chan.me/?do=search&subaction=search&story=Evangelion")
+curl:setOpt(CURLOPT_AUTOREFERER,1)
+curl:setOpt(CURLOPT_USERAGENT,"test2.lua")
+curl:setOpt(CURLOPT_REFERER,"http://hentai-chan.me/")
+
+f = io.open("test2/search1.html","wb")
+print(curl:performFile(f))
+f:close()
+
+curl:setOpt(CURLOPT_URL,"http://hentai-chan.me/index.php?do=search")
+curl:setOpt(CURLOPT_POST,1)
+curl:setOpt(CURLOPT_POSTFIELDS,"do=search&subaction=search&search_start=2&full_search=0&result_from=41&result_num=40&story=Evangelion")
+
+f = io.open("test2/search2.html","wb")
+print(curl:performFile(f))
+f:close()
+
+curl:setOpt(CURLOPT_URL,"http://hentai-chan.me/index.php?do=search")
+--curl:setOpt(CURLOPT_REFERER,"http://hentai-chan.me/index.php?do=search")
+curl:setOpt(CURLOPT_POST,1)
+curl:setOpt(CURLOPT_POSTFIELDS,"do=search&subaction=search&search_start=3&full_search=0&result_from=81&result_num=40&story=Evangelion")
+
+f = io.open("test2/search3.html","wb")
+print(curl:performFile(f))
+f:close()

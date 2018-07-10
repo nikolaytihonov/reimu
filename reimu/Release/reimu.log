@@ -1,0 +1,34 @@
+﻿Build started 27.10.2017 0:59:58.
+     1>Project "D:\lua534\lua534\reimu\reimu.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\reimu.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\libcurl\builds\libcurl-vc10-x86-release-dll-ipv6-sspi-winssl\include\\" /I"D:\htmlcxx-0.86\\" /ID:\lua534\src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D LUA_BUILD_AS_DLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt file.cpp
+         file.cpp
+     1>file.cpp(30): warning C4244: аргумент: преобразование "time_t" в "lua_Number", возможна потеря данных
+     1>file.cpp(31): warning C4244: аргумент: преобразование "time_t" в "lua_Number", возможна потеря данных
+     1>file.cpp(32): warning C4244: аргумент: преобразование "time_t" в "lua_Number", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\lua534\lua534\Release\reimu.exe" /NOLOGO /LIBPATH:"D:\libcurl\builds\libcurl-vc10-x86-release-dll-ipv6-sspi-winssl\lib" /LIBPATH:D:\lua534\lua534\Release /LIBPATH:"D:\htmlcxx-0.86\Release" lua534.lib htmlcxx.lib libcurl.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\reimu.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\lua534\lua534\Release\reimu.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\lua534\lua534\Release\reimu.lib" /MACHINE:X86 Release\dbg.obj
+         Release\file.obj
+         Release\html.obj
+         Release\lcurl.obj
+         Release\main.obj
+         Release\platform.obj
+         Release\task.obj
+         Release\u8.obj
+         Release\utils.obj
+            Создается библиотека D:\lua534\lua534\Release\reimu.lib и объект D:\lua534\lua534\Release\reimu.exp
+         Создание кода
+         Создание кода завершено
+         reimu.vcxproj -> D:\lua534\lua534\Release\reimu.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\lua534\lua534\Release\reimu.exe;#1" /manifest Release\reimu.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\reimu.unsuccessfulbuild".
+         Touching "Release\reimu.lastbuildstate".
+     1>Done Building Project "D:\lua534\lua534\reimu\reimu.vcxproj" (build target(s)).
+
+Построение успешно завершено.
+
+Time Elapsed 00:00:14.83

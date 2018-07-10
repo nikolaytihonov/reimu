@@ -1,0 +1,435 @@
+<html>
+
+<head>
+
+<title>
+Lua: Functions and Types: lua_gc</title>
+
+<meta name=author content="Peter Lowe; pgl@yoyo.org">
+<meta name=MSSmartTagsPreventParsing content="TRUE">
+<meta name=cabal content="">
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+
+<link rel="shortcut icon" href="http://pgl.yoyo.org/favicon.ico">
+<link rel="icon" href="http://pgl.yoyo.org/favicon.ico" type="image/ico">
+
+<script type="text/javascript" language="javascript"><!--
+if (window != top) top.location.href = location.href;
+// --></script>
+
+
+<link rel=stylesheet type="text/css" href="http://pgl.yoyo.org/css/luai.css">
+
+</head>
+
+<body>
+
+<table cellpadding=0 cellspacing=0>
+
+<tr>
+
+<td valign=top>
+	<table style="width: 700; border: 1px solid #222;" cellpadding=0 cellspacing=5>
+
+	<tr><td valign=top class=luahead style="color: #008000;">
+	lua_gc	</td></tr>
+
+
+	
+	
+
+	
+	<tr><td style="padding: 8px; font-size: 13px;">
+	<span class="apii">[-0, +0, <em>e</em>]</span>
+<pre>int <a class=funcname href="/luai/i/lua_gc">lua_gc</a> (<a class=funcname href="/luai/i/lua_State">lua_State</a> *L, int what, int data);</pre>
+
+
+<p><p>
+Controls the garbage collector.
+
+
+<p><p>
+This function performs several tasks,
+according to the value of the parameter <code>what</code>:
+
+
+<p><ul>
+
+
+<p><li><b><code>LUA_GCSTOP</code>:</b>
+stops the garbage collector.
+</li>
+
+
+<p><li><b><code>LUA_GCRESTART</code>:</b>
+restarts the garbage collector.
+</li>
+
+
+<p><li><b><code>LUA_GCCOLLECT</code>:</b>
+performs a full garbage-collection cycle.
+</li>
+
+
+<p><li><b><code>LUA_GCCOUNT</code>:</b>
+returns the current amount of memory (in Kbytes) in use by Lua.
+</li>
+
+
+<p><li><b><code>LUA_GCCOUNTB</code>:</b>
+returns the remainder of dividing the current amount of bytes of
+memory in use by Lua by 1024.
+</li>
+
+
+<p><li><b><code>LUA_GCSTEP</code>:</b>
+performs an incremental step of garbage collection.
+The step "size" is controlled by <code>data</code>
+(larger values mean more steps) in a non-specified way.
+If you want to control the step size
+you must experimentally tune the value of <code>data</code>.
+The function returns 1 if the step finished a
+garbage-collection cycle.
+</li>
+
+
+<p><li><b><code>LUA_GCSETPAUSE</code>:</b>
+sets <code>data</code> as the new value
+for the <em>pause</em> of the collector (see <a href="2.10">&sect;2.10</a>).
+The function returns the previous value of the pause.
+</li>
+
+
+<p><li><b><code>LUA_GCSETSTEPMUL</code>:</b>
+sets <code>data</code> as the new value for the <em>step multiplier</em> of
+the collector (see <a href="2.10">&sect;2.10</a>).
+The function returns the previous value of the step multiplier.
+</li>
+
+
+<p></ul>	</td></tr>
+
+	</table>
+</td>
+
+
+<td valign=top class=small style="font-family: inconsolata, lucida console, monospace; padding-left: 20px; padding-top: 4px;" align=right>
+<a style="font-weight: bold; letter-spacing: 2px;" href="_">EVERYTHING</a>
+
+<hr size=1>
+
+<a style="font-weight: bold;" href="3.7+Functions+and+Types">Functions and Types</a>
+
+<hr size=1>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_Alloc">lua_Alloc<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_atpanic">lua_atpanic<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_call">lua_call<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_CFunction">lua_CFunction<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_checkstack">lua_checkstack<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_close">lua_close<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_concat">lua_concat<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_cpcall">lua_cpcall<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_createtable">lua_createtable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_dump">lua_dump<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_equal">lua_equal<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_error">lua_error<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_gc">lua_gc<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_getallocf">lua_getallocf<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_getfenv">lua_getfenv<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_getfield">lua_getfield<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_getglobal">lua_getglobal<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_getmetatable">lua_getmetatable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_gettable">lua_gettable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_gettop">lua_gettop<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_insert">lua_insert<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_Integer">lua_Integer<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isboolean">lua_isboolean<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_iscfunction">lua_iscfunction<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isfunction">lua_isfunction<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_islightuserdata">lua_islightuserdata<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isnil">lua_isnil<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isnone">lua_isnone<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isnoneornil">lua_isnoneornil<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isnumber">lua_isnumber<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isstring">lua_isstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_istable">lua_istable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isthread">lua_isthread<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_isuserdata">lua_isuserdata<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_lessthan">lua_lessthan<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_load">lua_load<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_newstate">lua_newstate<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_newtable">lua_newtable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_newthread">lua_newthread<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_newuserdata">lua_newuserdata<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_next">lua_next<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_Number">lua_Number<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_objlen">lua_objlen<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pcall">lua_pcall<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pop">lua_pop<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushboolean">lua_pushboolean<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushcclosure">lua_pushcclosure<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushcfunction">lua_pushcfunction<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushfstring">lua_pushfstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushinteger">lua_pushinteger<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushlightuserdata">lua_pushlightuserdata<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushliteral">lua_pushliteral<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushlstring">lua_pushlstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushnil">lua_pushnil<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushnumber">lua_pushnumber<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushstring">lua_pushstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushthread">lua_pushthread<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushvalue">lua_pushvalue<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_pushvfstring">lua_pushvfstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_rawequal">lua_rawequal<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_rawget">lua_rawget<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_rawgeti">lua_rawgeti<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_rawset">lua_rawset<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_rawseti">lua_rawseti<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_Reader">lua_Reader<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_register">lua_register<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_remove">lua_remove<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_replace">lua_replace<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_resume">lua_resume<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_setallocf">lua_setallocf<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_setfenv">lua_setfenv<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_setfield">lua_setfield<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_setglobal">lua_setglobal<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_setmetatable">lua_setmetatable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_settable">lua_settable<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_settop">lua_settop<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_State">lua_State<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_status">lua_status<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_toboolean">lua_toboolean<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tocfunction">lua_tocfunction<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tointeger">lua_tointeger<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tolstring">lua_tolstring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tonumber">lua_tonumber<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_topointer">lua_topointer<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tostring">lua_tostring<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_tothread">lua_tothread<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_touserdata">lua_touserdata<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_type">lua_type<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_typename">lua_typename<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_Writer">lua_Writer<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_xmove">lua_xmove<a>&bull;<br>
+
+
+<a style="font-family: inconsolata, lucida console, monospace;" href="lua_yield">lua_yield<a>&bull;<br>
+
+
+
+
+
+</td>
+
+
+</tr>
+
+</table>
+
+
+<p>
+	<form action="http://pgl.yoyo.org/luai">
+
+	<input size=40 class=small type=text size=8 name=q value="Functions and Types"><input class=small type=submit value="submit">
+
+	&bull;
+
+	<tt>
+	[ <b><a href="about">?</a></b>
+	| <a href="_">&uArr;</a> 
+	| <a href="http://www.lua.org/manual/5.1/manual.html#3.7">@</a>
+	]
+	</tt>
+
+	</form>
+
+<p>
+
+</body>
+
+
+</html>
