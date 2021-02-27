@@ -1,4 +1,4 @@
-# lua534
+# lua534 (reimu)
 Lua Web Dumper<br>
 
 I wrote this thing because in some period of my life i was needed in fast way to dump websites, so here it's
