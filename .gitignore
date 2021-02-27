@@ -1,0 +1,12 @@
+_UpgradeReport_Files
+ipch
+*.tlog
+*.obj
+*.pdb
+*.ilk
+*.sdf
+htmlcxx/Release
+lcore/Release
+liblua/Release
+lua534/Release
+reimu/Release
